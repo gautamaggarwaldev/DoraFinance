@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoraFinance - AI Stock Market Advisor</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>DoraFinance</h1>
+            </div>
+            <p class="tagline">AI-Powered Stock Market Insights</p>
+        </header>
+
+        <main>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Expert Analysis</h3>
+                    <p>Get insights backed by 20+ years of market experience</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Balanced View</h3>
+                    <p>Understand both risks and opportunities</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Learn Markets</h3>
+                    <p>Improve your investment knowledge</p>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Ask DoraFinance</h2>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message system">
+                        <div class="message-content">
+                            <p>Welcome to DoraFinance! I'm your AI stock market advisor. Ask me about investments, market trends, or financial strategies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <form id="questionForm">
+                        <input type="text" id="questionInput" placeholder="Ask about stocks, market trends, investment strategies..." required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="suggested-questions">
+                <h3>Suggested Questions</h3>
+                <div class="question-chips">
+                    <button class="question-chip" data-question="What's a good strategy for long-term investing?">Long-term investing</button>
+                    <button class="question-chip" data-question="How do I start investing with a small budget?">Investing with small budget</button>
+                    <button class="question-chip" data-question="What metrics should I look at when evaluating a stock?">Stock evaluation metrics</button>
+                    <button class="question-chip" data-question="How does inflation affect the stock market?">Inflation & markets</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> DoraFinance provides educational information, not financial advice. Always consult with a qualified financial advisor before making investment decisions.</p>
+            </div>
+            <div class="copyright">
+                <p>© 2025 DoraFinance - AI Stock Market Advisor</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
